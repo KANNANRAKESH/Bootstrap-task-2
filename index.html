@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Mob</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9a10497c62.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bar sticky-top bg-white d-flex-expand-lg"
+      id="mainNav"
+    >
+      <div class="container-fluid d-flex flex-coloum flex-nowrap">
+        <a class="navbar-brand bar" href="#">START BOOTSTRAP</a>
+
+        <button
+          class="navbar-toggler d-flex d-lg-none justify-content-center text-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          Menu
+          <i class="fa fa-bars text-dark fs-5 ms-1"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse px-4" id="collapsibleNavbar">
+        <ul class="navbar-nav joke">
+          <li class="nav-item pt-1">
+            <a class="nav-link" href="#PORTFOLIO">PORTFOLIO</a>
+          </li>
+          <li class="nav-item pt-1">
+            <a class="nav-link" href="#ABOUT">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary nav-btn-one rounded-pill"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <pre
+                class="nav-button"
+              ><i class="fa fa-commenting-o" aria-hidden="true"></i> Send Feedback</pre>
+            </button>
+
+            <!-- Modal -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header header p-4">
+            <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
+              Send feedback
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mt-3 mb-4">
+              <input
+                type="name"
+                class="form-control fw-bold"
+                id="floatingFullname"
+                placeholder="Fullname"
+              />
+              <label for="floatingPassword">Full Name</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="email"
+                class="form-control fw-bold"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input
+                type="Number"
+                class="form-control fw-bold"
+                id="floatingNumber"
+                placeholder="Phone number"
+              />
+              <label for="floatingPassword">Phone number</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control fw-bold"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Message</label>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary modalfooterbutton">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-lg-flex justify-content-center">
+      <div class="container ps-xl-5 ps-0">
+        <div class="row gx-5 align-items-center pt-5">
+          <div class="col-lg-6 pt-5">
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-1 mob-div d-flex justify-content-center">
+                Showcase your app beautifully.
+              </h1>
+              <h4 class="lead fw-normal text-mute mb-5">
+                Launch your mobile app landing page faster with this free, open
+                source theme from Start Bootstrap!
+              </h4>
+              <img style="width: 150px" src="img/app-store-badge.svg" alt="" />
+              <img
+                style="width: 150px"
+                src="img/google-play-badge.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-6 position-relative d-none d-md-flex mx-auto justify-content-center"
+          >
+            <svg height="700" width="700" class="opan">
+              <defs>
+                <linearGradient
+                  id="grad1"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                  gradientTransform="rotate(45)"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #2937f0; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #9f1ae2; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <ellipse cx="250" cy="300" rx="200" ry="200" fill="url(#grad1)" />
+              <image
+                href="img/f6999ca2-f3b3-4178-ba99-f2a8cbd7b514.jpg"
+                height="30rem"
+                x="22%"
+                y="9%"
+              ></image>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="device1 d-flex justify-content-center align-items-center d-md-none container"
+    >
+      <img
+        class="mb-5"
+        src="img/f6999ca2-f3b3-4178-ba99-f2a8cbd7b514.jpg"
+        alt="iphone"
+      />
+    </div>
+    <div class="container-fluid header pb-5">
+      <div
+        class="container text-center text-white mx-auto div2 col-lg-7 d-flex justify-content-lg-center pt-3"
+      >
+        <h1 class="pt-5">
+          "An intuitive solution to a common problem that we all face, wrapped
+          up in a single app!"
+        </h1>
+      </div>
+      <div
+        class="container text-center text-white mx-auto div2 col-lg-7 d-flex justify-content-center pt-4"
+      >
+        <img style="width: 100px" src="img/tnw-logo.svg" alt="" />
+      </div>
+    </div>
+    <div class="container ps-0">
+      <div class="d-lg-flex d-block gx-5 align-items-center pt-2">
+        <div
+          class="col-lg-7 d-block flex-wrap d-md-flex justify-content-center order-lg-1"
+        >
+          <div class="col-md-6 text-center p-3">
+            <i class="bx bx-mobile-alt text-gradient"></i>
+            <h1 class="div2 fw-bolder pt-3">Device Mockups</h1>
+            <p>Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+          </div>
+          <div class="col-md-6 text-center p-3">
+            <i class="bx bx-camera text-gradient"></i>
+            <h1 class="div2 fw-bolder pt-3">Flexible Use</h1>
+            <p>
+              Put an image, video, animation, or anything else in the screen!
+            </p>
+          </div>
+          <div class="col-md-6 text-center p-3">
+            <i class="bx bx-gift text-gradient"></i>
+            <h1 class="div2 fw-bolder pt-3">Free to Use</h1>
+            <p>
+              As always, this theme is free to download and use for any purpose!
+            </p>
+          </div>
+          <div class="col-md-6 text-center p-3">
+            <i class="bx bx-badge-check text-center text-gradient"></i>
+            <h1 class="div2 fw-bolder pt-3">Open Source</h1>
+            <p>
+              Since this theme is MIT licensed, you can use it commercially!
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 d-none d-md-flex justify-content-center mx-auto order-lg-0"
+        >
+          <svg height="600" width="700" class="opan">
+            <defs>
+              <linearGradient
+                id="grad1"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+                gradientTransform="rotate(45)"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #2937f0; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #9f1ae2; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+            <ellipse cx="170" cy="350" rx="150" ry="150" fill="url(#grad1)" />
+            <image
+              href="img/f6999ca2-f3b3-4178-ba99-f2a8cbd7b514.jpg"
+              height="460px"
+              x="28%"
+              y="14%"
+            ></image>
+          </svg>
+        </div>
+        <div
+          class="device1 d-flex justify-content-center align-items-center d-md-none container"
+        >
+          <img
+            class="mb-5"
+            src="img/f6999ca2-f3b3-4178-ba99-f2a8cbd7b514.jpg"
+            alt="iphone"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-lg-flex justify-content-center bg-light">
+      <div class="container ps-xl-5 ps-0">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 pt-5">
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-3 mob-div d-flex justify-content-center">
+                Enter a new age of web design
+              </h1>
+              <h4 class="fs-4 fw-normal mb-5 boxpic">
+                This section is perfect for featuring some information about
+                your application, why it was built, the problem it solves, or
+                anything else! There's plenty of space for text here, so don't
+                worry about writing too much.
+              </h4>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 position-relative d-flex mx-auto justify-content-center pb-2 pb-lg-5 pt-2 pt-lg-5"
+          >
+            <img
+              class="img-fluid rounded-pill mb-5 boximg"
+              src="img/photo-1620207418302-439b387441b0.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="cta bg-dark">
+      <div class="cta-content">
+        <div class="container px-5">
+          <h2 class="text-white display-1 pictext lh-1 mb-4">
+            Stop waiting.
+            <br />
+            Start building.
+          </h2>
+          <a
+            class="btn btn-outline-light py-3 px-4 rounded-pill"
+            href="https://startbootstrap.com/theme/new-age"
+            target="_blank"
+            >Download for free</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="header pt-3 pb-5">
+      <div class="container text-center text-lg-start">
+        <h1 class="get fw-bold text-white fs-3 pb-3 text-center pt-5">
+          Get the app now!
+        </h1>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-center align-items-center"
+        >
+          <img
+            class="me-0 me-lg-3 mb-3 mb-lg-0"
+            style="width: 150px"
+            src="img/app-store-badge.svg"
+            alt=""
+          />
+          <img style="width: 150px" src="img/google-play-badge.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer pt-4 pb-4">
+      <h6 class="text-center text-muted">
+        © Your Website 2023. All Rights Reserved.
+      </h6>
+      <h6 class="text-center text-muted">Privacy · Terms · FAQ</h6>
+    </div>
+  </body>
+</html> 
